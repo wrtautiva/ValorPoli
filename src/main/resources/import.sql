@@ -8,3 +8,4 @@ INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at)
 INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(8,'bebeto','897979','realm@gmail.com','2016-08-01');
 INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(9,'ronaldiño','897979','realm@gmail.com','2012-08-01');
 INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(10,'kan','897979','realm@gmail.com','2013-08-01');
+INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(11,'kan','897979','realm@gmail.com','2013-08-01');
