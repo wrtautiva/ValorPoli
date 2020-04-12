@@ -14,7 +14,7 @@ import com.valorcompartido.springboot.app.services.UsuarioService;
 
 @Controller
 public class UserController {
-
+// controller
 	@Autowired
 	private UsuarioService usaservi;	
 	

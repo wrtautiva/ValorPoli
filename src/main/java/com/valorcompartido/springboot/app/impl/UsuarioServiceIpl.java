@@ -11,7 +11,7 @@ import com.valorcompartido.springboot.app.services.UsuarioService;
 
 @Service
 public class UsuarioServiceIpl extends GenericServiceImpl<Usuario, Long >  implements UsuarioService{
-	
+	//implementacion del dao
 	@Autowired
 	private IUsuarioDao usuariodao;
 	@Override

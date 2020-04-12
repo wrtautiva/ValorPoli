@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringBootValorCompartidoConfApplication {
 
 	public static void main(String[] args) {
+		//metodo principal
 		SpringApplication.run(SpringBootValorCompartidoConfApplication.class, args);
 	}
 
