@@ -1,0 +1,10 @@
+INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(1,'Andres','1478574','dfter@gmail.com','2017-05-05');
+INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(2,'romario','897979','realm@gmail.com','2011-08-01');
+INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(3,'romario','897979','realm@gmail.com','2010-08-01');
+INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(4,'dmari','897979','realm@gmail.com','2001-08-01');
+INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(5,'falcao','897979','realm@gmail.com','2001-08-01');
+INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(6,'james','897979','realm@gmail.com','2021-08-01');
+INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(7,'ronaldo','897979','realm@gmail.com','2015-08-01');
+INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(8,'bebeto','897979','realm@gmail.com','2016-08-01');
+INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(9,'ronaldiño','897979','realm@gmail.com','2012-08-01');
+INSERT INTO usuario (id,nombre_usuario,numeroid_usuario,email_usuario,create_at) values(10,'kan','897979','realm@gmail.com','2013-08-01');
