@@ -27,14 +27,23 @@ public class UsuarioRestController {
 		return usaservi.getAll();
 	}
 	
+	
 	@PostMapping(value = "save")
 	public ResponseEntity<Usuario> save(@RequestBody Usuario usuario){
 	   Usuario obj=	usaservi.save(usuario);
-		
-		return new ResponseEntity<Usuario>(obj,HttpStatus.OK);
+	   return new ResponseEntity<Usuario>(obj,HttpStatus.OK);
 					
 	}
-	@GetMapping(value = "/delete")
+	
+	
+	@GetMapping(value = "/find/{id}")
+	public Usuario find (@PathVariable Long id) {
+		Usuario usuario =usaservi.get(id);
+		return usuario;
+	}
+	
+
+	@GetMapping(value = "/delete/{id}")
 	public ResponseEntity<Usuario> delete(@PathVariable Long id){
 		Usuario usuario  = usaservi.get(id);
 		if(usuario  != null) {
@@ -44,8 +53,6 @@ public class UsuarioRestController {
 		}
 		return new  ResponseEntity<Usuario>(usuario , HttpStatus.OK);
 	}
-	
-	
 	
 	
 }
