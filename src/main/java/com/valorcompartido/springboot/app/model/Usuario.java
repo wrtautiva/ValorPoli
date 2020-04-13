@@ -27,6 +27,9 @@ public class Usuario {
 	@Column(name = "email_usuario")
 	private String email;
 	
+	@Column(name = "id_modulo")
+	private Long idmodulo;
+	
 	@Column(name = "create_at")
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
