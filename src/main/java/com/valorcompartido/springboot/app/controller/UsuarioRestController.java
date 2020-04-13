@@ -28,7 +28,7 @@ public class UsuarioRestController {
 	}
 	
 	
-	@PostMapping(value = "save")
+	@PostMapping(value = "/save")
 	public ResponseEntity<Usuario> save(@RequestBody Usuario usuario){
 	   Usuario obj=	usaservi.save(usuario);
 	   return new ResponseEntity<Usuario>(obj,HttpStatus.OK);
@@ -43,7 +43,7 @@ public class UsuarioRestController {
 	}
 	
 
-	@GetMapping(value = "/delete/{id}")
+	@GetMapping(value = "/deleter/{id}")
 	public ResponseEntity<Usuario> delete(@PathVariable Long id){
 		Usuario usuario  = usaservi.get(id);
 		if(usuario  != null) {
