@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -34,9 +36,11 @@ public class Modulo {
 	@Column(name = "imagen_modulo")
 	private String imagen;
 	
-	@Column(name = "create_at")
-	@Temporal(TemporalType.DATE)
-	private Date createAt;
+	@ManyToOne
+	@JoinColumn(name = "usuario_modulo")
+	Usuario usuario;
+	
+	
 	
 	
 	public Modulo() {
@@ -52,7 +56,7 @@ public class Modulo {
 		this.descripcion = descripcion;
 		this.titulo = titulo;
 		this.imagen = imagen;
-		this.createAt = createAt;
+		
 	}
 
 	public Long getId() {
@@ -103,13 +107,7 @@ public class Modulo {
 		this.imagen = imagen;
 	}
 
-	public Date getCreateAt() {
-		return createAt;
-	}
 
-	public void setCreateAt(Date createAt) {
-		this.createAt = createAt;
-	}
 	
 	
 

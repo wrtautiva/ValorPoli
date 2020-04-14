@@ -1,12 +1,14 @@
 package com.valorcompartido.springboot.app.model;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 //Entidad
@@ -30,9 +32,10 @@ public class Usuario {
 	@Column(name = "id_modulo")
 	private Long idmodulo;
 	
-	@Column(name = "create_at")
-	@Temporal(TemporalType.DATE)
-	private Date createAt;
+	@OneToMany(mappedBy ="usuario" )
+	List<Modulo> moduloList;
+	
+
 	
 	
 	public Usuario() {
@@ -46,7 +49,7 @@ public class Usuario {
 		Nombre = nombre;
 		this.numeroId = numeroId;
 		this.email = email;
-		this.createAt = createAt;
+		
 	}
 
 	public Long getId() {
@@ -81,13 +84,7 @@ public class Usuario {
 		this.email = email;
 	}
 
-	public Date getCreateAt() {
-		return createAt;
-	}
 
-	public void setCreateAt(Date createAt) {
-		this.createAt = createAt;
-	}
 	
 	
 	
