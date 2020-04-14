@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th"http://www.thymeleaf.org">
-<head>
-<meta charset="UTF-8"/>
-<title>Admin Usuario</title>
-
-	<!-- Boostrap  -->
-	<link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}">
-	
-</head>
+<head th:replace="layout/layout :: head"></head>
 <body>
+
+	<header th:replace="layout/layout :: header"></header>
 	<div class="container">
 	
 		<br>
@@ -49,6 +44,6 @@
 		
 	
 	</div>
-		
+		<footer th:replace="layout/layout :: footer"></footer>
 </body>
 </html>
