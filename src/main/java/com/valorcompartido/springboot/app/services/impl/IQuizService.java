@@ -9,7 +9,7 @@ import com.valorcompartido.springboot.app.model.dto.ModuloDTO;
 import com.valorcompartido.springboot.app.model.entity.ModuloEntity;
 import com.valorcompartido.springboot.app.model.entity.QuizEntity;
 import com.valorcompartido.springboot.app.model.dto.QuizDTO;
-import com.valorcompartido.springboot.app.services.ModuloService;
+import com.valorcompartido.springboot.app.services.ModuloServiceJP;
 import com.valorcompartido.springboot.app.services.QuizService;
 import org.springframework.stereotype.Service;
 
@@ -22,9 +22,9 @@ import java.util.stream.Collectors;
 public class IQuizService implements QuizService {
 
     private final QuizDAO quizDAO;
-    private final ModuloService service;
+    private final ModuloServiceJP service;
 
-    public IQuizService(QuizDAO quizDAO, ModuloService service) {
+    public IQuizService(QuizDAO quizDAO, ModuloServiceJP service) {
 
         this.quizDAO = quizDAO;
         this.service = service;

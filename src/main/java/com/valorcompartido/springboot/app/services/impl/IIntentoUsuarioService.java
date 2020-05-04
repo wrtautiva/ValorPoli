@@ -14,7 +14,7 @@ import com.valorcompartido.springboot.app.model.entity.*;
 import com.valorcompartido.springboot.app.services.IntentoUsuarioService;
 import com.valorcompartido.springboot.app.services.PreguntaService;
 import com.valorcompartido.springboot.app.services.RespuestaService;
-import com.valorcompartido.springboot.app.services.UsuarioService;
+import com.valorcompartido.springboot.app.services.UsuarioServiceJP;
 import org.springframework.stereotype.Service;
 
 import javax.persistence.PersistenceException;
@@ -26,12 +26,12 @@ import java.util.stream.Collectors;
 public class IIntentoUsuarioService implements IntentoUsuarioService {
 
     private final IntentoUsuarioDAO intentoUsuarioDAO;
-    private final UsuarioService usuarioService;
+    private final UsuarioServiceJP usuarioService;
     private final PreguntaService preguntaService;
     private final RespuestaService respuestaService;
     private final Util util;
 
-    public IIntentoUsuarioService(IntentoUsuarioDAO intentoUsuarioDAO, UsuarioService usuarioService, PreguntaService preguntaService, RespuestaService respuestaService, Util util) {
+    public IIntentoUsuarioService(IntentoUsuarioDAO intentoUsuarioDAO, UsuarioServiceJP usuarioService, PreguntaService preguntaService, RespuestaService respuestaService, Util util) {
         this.intentoUsuarioDAO = intentoUsuarioDAO;
         this.usuarioService = usuarioService;
         this.preguntaService = preguntaService;

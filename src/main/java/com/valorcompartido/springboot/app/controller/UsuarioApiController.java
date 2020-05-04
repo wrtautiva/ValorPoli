@@ -3,7 +3,7 @@ package com.valorcompartido.springboot.app.controller;
 import com.valorcompartido.springboot.app.core.exceptions.base.ServiceException;
 import com.valorcompartido.springboot.app.model.dto.UsuarioDTO;
 import com.valorcompartido.springboot.app.model.entity.UsuarioEntity;
-import com.valorcompartido.springboot.app.services.UsuarioService;
+import com.valorcompartido.springboot.app.services.UsuarioServiceJP;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -17,9 +17,9 @@ import java.util.List;
 @RequestMapping("api/usuario")
 public class UsuarioApiController {
 
-    private final UsuarioService service;
+    private final UsuarioServiceJP service;
 
-    public UsuarioApiController(UsuarioService service) {
+    public UsuarioApiController(UsuarioServiceJP service) {
         this.service = service;
     }
 
